@@ -1,2 +1,2 @@
 # farming
-this repo is home to my mini project
+this repo is code to my mini project
