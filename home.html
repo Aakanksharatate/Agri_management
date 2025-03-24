@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---Header start-->
+    <header>  
+        <nav class="navbar container flex">
+            <h2 class="Agri"><a href="#">AgriDashboard </a></h2>
+
+            <ul class="nav-links flex">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#Contact-Us">Contact us</a></li>
+            </ul>
+            
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+            </label>
+            
+       
+
+        <div class="slide">
+            <h1>MENU</h1>
+            <ul>
+                <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                <li><a href="#"><i class="fa fa-tv"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>Blogs</a></li>
+                <li><a href="#"><i class="fa fa-crop"></i>Crop management</a></li>
+                <li><a href="#"><i class="fa fa-gear"></i>Rent equipment</a></li>
+                <li><a href="#"><i class="fa fa-cogs"></i>Setting</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <!--header end-->
+
+    <!--Scrolling news section-->
+    <div class="scroll-container">
+        <div class="scroll-text">
+            Government Scheme:PM-KISAN provide $6000 per year to farmers | KCC Loan up to $3 lakh at low interest 
+        </div>
+    </div>
+
+
+    <!--homepage-->
+    <section class="homepage" id="home">
+        <div class="content">
+            <div class="text">
+                <h1>" Smarter Farming, Higher Yields, Greener Future"</h1>
+                <p>Leverage real-time insights, soil health tracking, and smart farm management tools to boost productivity and sustainability.</p>
+            </div>
+         </div>
+    </section>
+    <!--homepage-->
+
+    <!--About Us-->
+    <section class="aboutus">
+        <div class="container">
+            <h1>About Us</h1>
+            <hr>
+        </div>
+        <div class="about-content">
+            <div class="ab-text">
+             <p>"Innovative Tools for Smarter Farming, Higher Yields, and a Greener Future"
+
+                We provide cutting-edge technology and data-driven insights to empower farmers and agribusinesses. 
+                Our solutions help optimize resources, enhance productivity, and promote sustainable farming practices.
+                 By simplifying decision-making, reducing waste, and leveraging real-time data, we ensure long-term agricultural success.</p>
+                 <div class="button">
+                    <a href="#">Read More</a>
+                 </div>
+            </div>
+            <div class="image">
+            <img src="./aboutus.jpg.jpg" alt="smart farming">
+        </div>
+    </div> 
+        
+        
+    </section>
+
+    <!--Services-->
+    <section class="service">
+        <div class="s-container">
+            <div class="service-wrapper">
+                <div class="Service">
+                    <h1>Our Services</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <h2>Soil Detection</h2>
+                            <p>
+                                Analyze soil quality with precision to ensure the best crop growth and sustainable farming.
+                
+                            </p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                            <h2>Crop Management</h2>
+                            <p>Get expert insights and recommendations to maximize your crop yield efficiently.</p>
+                        </p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-cloud-sun-rain"></i>
+                            <h2>Weather Forcasting</h2>
+                            <p> Stay updated with real-time weather reports to plan your farming activities wisely.</p>
+                            
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-book-open"></i>
+                            <h2>Blogs</h2>
+                            <p>Read expert-written articles and tips to stay ahead in modern agriculture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Section -->
+        <section class="review-section" id="reviews">
+    <div class="review-container">
+        <h1>Customer Reviews</h1>
+        <hr>
+
+        <div class="review-content">
+            <!-- Reviews Display Section -->
+            <div class="reviews-display">
+                <h2>What Our Users Say</h2>
+                <div id="reviews-list">
+                    <div class="review">
+                        <i class="fas fa-user-circle profile-icon"></i>
+                        <div class="review-text">
+                            <p>"This platform has significantly improved my farm productivity!"</p>
+                            <h4>- Rajesh Kumar</h4>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-user-circle profile-icon"></i>
+                        <div class="review-text">
+                            <p>"Weather updates and soil tracking features are very useful!"</p>
+                            <h4>- Priya Sharma</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Form Section -->
+            <div class="review-form">
+                <h2>Write a Review</h2>
+                <form id="reviewForm">
+                    <div class="input-group">
+                        <label for="reviewer-name">Name:</label>
+                        <textarea id="reviewer-name" placeholder="Your Name" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reviewer-email">Email:</label>
+                        <textarea id="reviewer-email" placeholder="Your Email" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="review-text">Your Review:</label>
+                        <textarea id="review-text" placeholder="Your Review" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--contact us-->
+    <footer>
+        <div class="contact-us">
+            <h2>CONTACT US</h2>
+            <p><strong>Email:</strong> <a href="mailto:example@agriculture.com">example@agriculture.com</a></p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+    
+            <div class="social-icons">
+                <div class="social">
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank">&#128187; facebook.com/example</a>
+                    <a href="#" target="_blank">&#128248; instagram.com/example</a>
+                    <a href="#" target="_blank">&#128172; twitter.com/example</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    
+    
+       
+        
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
