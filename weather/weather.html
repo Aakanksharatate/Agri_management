@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="weather.css">
+  <script defer src="weather.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <section class="sidebar">
+      <div class="search-box">
+        <input type="text" id="userLocation" placeholder="Enter city...">
+        <select id="converter">
+          <option>°C</option>
+          <option>°F</option>
+        </select>
+        <button onclick="findUserLocation()"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="current-weather">
+        <div class="icon">🌤️</div>
+        <h2 class="temperature">28.23°C</h2>
+        <p class="feelsLike">Feels Like: 28.91°C</p>
+        <p class="description">Clear Sky</p>
+        <p class="date">3/21/2025</p>
+        <p class="city">Virar</p>
+      </div>
+    </section>
+
+    <section class="main-content">
+      <h2>Today's Highlights</h2>
+      <div class="highlights">
+        <div class="card">
+          <p>Humidity</p>
+          <h3 id="HValue">52%</h3>
+        </div>
+        <div class="card">
+          <p>Wind Speed</p>
+          <h3 id="WValue">4.13 m/s</h3>
+        </div>
+        <div class="card">
+          <p>Clouds</p>
+          <h3 id="CValue">20%</h3>
+        </div>
+        <div class="card">
+          <p>UV Index</p>
+          <h3 id="UVValue">3</h3>
+        </div>
+        <div class="card">
+          <p>Sunset</p>
+          <h3 id="SSValue">6:45 PM</h3>
+        </div>
+        <div class="card">
+          <p>Pressure</p>
+          <h3 id="PValue">1012 hPa</h3>
+        </div>
+      </div>
+
+      <h2>This Week</h2>
+      <div class="forecast" id="Forecast">
+        <!-- Weekly forecast items -->
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
