@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Rental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Equipment Rental</h2>
+
+    <div class="equipment-container">
+        
+        <!-- Equipment 1: Tractor -->
+        <div class="equipment-item">
+            <img src="download.jpg" alt="WD 130HP Farm Tractor" width="250">
+            <h3>WD 130HP Farm Tractor</h3>
+            <p>Price: ₹15,5000 - ₹17,5000</p>
+            <p>Rent: ₹500/day</p>
+            <button class="viewDescriptionBtn">View Description</button>
+            <div class="details" style="display: none;">
+                <p>A powerful 130HP tractor equipped with advanced hydraulics, excellent fuel efficiency, and superior load-carrying capacity. Ideal for plowing, tilling, and hauling.</p>
+            </div>
+        </div>
+
+        <!-- Equipment 2: Harvester -->
+        <div class="equipment-item">
+            <img src="harvester.jpg" alt="Harvester Machine" width="250">
+            <h3>Multi-Crop Harvester</h3>
+            <p>Price: ₹10,00,000 - ₹12,00,000</p>
+            <p>Rent: ₹3,000/day</p>
+            <button class="viewDescriptionBtn">View Description</button>
+            <div class="details" style="display: none;">
+                <p>Designed for harvesting various crops such as wheat, paddy, and maize, this harvester increases productivity and reduces manual labor significantly.</p>
+            </div>
+        </div>
+
+        <!-- Equipment 3: Plough -->
+        <div class="equipment-item">
+            <img src="plough.jpg" alt="Agricultural Plough" width="250">
+            <h3>Heavy-Duty Plough</h3>
+            <p>Price: ₹50,000 - ₹80,000</p>
+            <p>Rent: ₹200/day</p>
+            <button class="viewDescriptionBtn">View Description</button>
+            <div class="details" style="display: none;">
+                <p>A sturdy plough designed for deep soil penetration, making it perfect for preparing land for crop cultivation by breaking up compact soil layers.</p>
+            </div>
+        </div>
+
+        <!-- Equipment 4: Seed Drill -->
+        <div class="equipment-item">
+            <img src="seed drill.jpg" alt="Seed Drill Machine" width="250">
+            <h3>Automatic Seed Drill</h3>
+            <p>Price: ₹90,000 - ₹1,50,000</p>
+            <p>Rent: ₹500/day</p>
+            <button class="viewDescriptionBtn">View Description</button>
+            <div class="details" style="display: none;">
+                <p>Ensures precise and uniform seed sowing, reducing seed wastage and improving crop yield. Suitable for multiple crop types.</p>
+            </div>
+        </div>
+
+        <!-- Equipment 5: Sprayer -->
+        <div class="equipment-item">
+            <img src="spayer.jpg" alt="Agricultural Sprayer" width="250">
+            <h3>High-Pressure Sprayer</h3>
+            <p>Price: ₹30,000 - ₹60,000</p>
+            <p>Rent: ₹150/day</p>
+            <button class="viewDescriptionBtn">View Description</button>
+            <div class="details" style="display: none;">
+                <p>Used for efficient pesticide and fertilizer application over large farm areas, ensuring healthy crop protection.</p>
+            </div>
+        </div>
+
+        <!-- Equipment 6: Rotavator -->
+        <div class="equipment-item">
+            <img src="Rotavator.jpg" alt="Rotavator Machine" width="250">
+            <h3>Rotavator</h3>
+            <p>Price: ₹70,000 - ₹1,20,000</p>
+            <p>Rent: ₹400/day</p>
+            <button class="viewDescriptionBtn">View Description</button>
+            <div class="details" style="display: none;">
+                <p>A powerful tillage tool used for land preparation, ensuring better soil aeration and breaking up hard soil clumps for better seed germination.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript to toggle equipment descriptions
+        document.querySelectorAll('.viewDescriptionBtn').forEach(button => {
+            button.addEventListener('click', function() {
+                let details = this.nextElementSibling;
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>

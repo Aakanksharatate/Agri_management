@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Customer Feedback</h2>
+
+    <div class="feedback-container">
+
+        <!-- Fake Preloaded Feedback -->
+        <div id="feedback-list">
+            <div class="feedback">
+                <p><strong>Rajesh patil:</strong> "Great service! The tractor was in excellent condition and very affordable."</p>
+            </div>
+            <div class="feedback">
+                <p><strong>Pooja mhatere:</strong> "The harvester worked perfectly! It saved us so much time during the harvest season."</p>
+            </div>
+            <div class="feedback">
+                <p><strong>Amit Vartak:</strong> "Reliable equipment. Easy rental process. Highly recommended!"</p>
+            </div>
+        </div>
+
+        <!-- Feedback Form -->
+        <h3>Leave Your Feedback</h3>
+        <form id="feedbackForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="message" placeholder="Write your feedback here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Get input values
+            let name = document.getElementById('name').value;
+            let message = document.getElementById('message').value;
+
+            // Create new feedback entry
+            let newFeedback = document.createElement('div');
+            newFeedback.classList.add('feedback');
+            newFeedback.innerHTML = `<p><strong>${name}:</strong> "${message}"</p>`;
+
+            // Add to feedback list
+            document.getElementById('feedback-list').appendChild(newFeedback);
+
+            // Clear form fields
+            document.getElementById('name').value = "";
+            document.getElementById('message').value = "";
+        });
+    </script>
+
+</body>
+</html>
+
