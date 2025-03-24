@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Management</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+
+<script src="translatePage.js"></script>
+
+
+<body>
+
+    
+    <div class="language-container">
+        <label for="languageSelector">Choose Language:</label>
+        <select id="languageSelector">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="mr">Marathi</option>
+            <option value="hi">Hindi</option>
+        </select>
+        
+    </div>
+
+    <h1 data-translate>Welcome to Agriculture Management System</h1>
+    <p data-translate>This system helps farmers manage their crops efficiently.</p>
+    
+    
+
+    <div data-translate class="container">
+        <form action="#">
+            <h2 data-translate>Login</h2>
+            <div class="input-box">
+                <input data-translate type="text" placeholder="Username" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input data-translate type="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div data-translate class="remember">
+                <label for="check"><input type="checkbox" id="check">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button data-translate class="btn">Login</button>
+            <div data-translate class="register">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="translatePage.js"></script>
+    
+</body>
+</html>
