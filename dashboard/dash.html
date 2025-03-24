@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dash.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <h2>Dash<span>Board</span></h2>
+    <ul>
+      <li class="active"><a href="#">Dashboard</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Crop management</a></li>
+      <li><a href="#">Weather forecast</a></li>
+      <li><a href="#">Rent/buy equipment</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="navbar">
+      <input type="text" placeholder="Search any content">
+      <div class="user-icon">👤</div>
+    </div>
+
+    <div class="summary">
+      <div class="summary-card">
+        <p>Wheat</p>
+        <h3>125 Tons</h3>
+        <span>+12%</span>
+      </div>
+      <div class="summary-card">
+        <p>Rice</p>
+        <h3>980 Tons</h3>
+        <span>+33%</span>
+      </div>
+    </div>
+
+    <div class="farm-section">
+
+      <div class="weather-container">
+        <div class="search-box">
+          <input type="text" id="userLocation" placeholder="Enter city...">
+          <select id="converter">
+            <option>°C</option>
+            <option>°F</option>
+          </select>
+          <button onclick="findUserLocation()">Search</button>
+        </div>
+
+        <div class="current-weather">
+          <div class="icon">🌤️</div>
+          <h2 class="temperature">28.23°C</h2>
+          <p class="feelsLike">Feels Like: 28.91°C</p>
+          <p class="description">Clear Sky</p>
+          <p class="suggestion">It's going to be a sunny day.</p>
+          <p class="date">3/21/2025</p>
+          <p class="city">Virar</p>
+        </div>
+        <a href="../weather/weather.html">Learn More</a>
+
+
+      </div>
+
+    </div>
+
+    <div class="harvest-cost">
+      <h3>Harvesting Cost</h3>
+      <p>$100K</p>
+    </div>
+  </div>
+
+  <script src="dash.js"></script>
+</body>
+
+</html>
